@@ -1,11 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import MapPage from "./map/map";
+
+import KakaoMap from "./map/mappage";
+import MapPage from "./map/mappage";
+
 
 export default function Home() {
+  
   return (
     <div>
-      <MapPage/>
+      <h1 className="next-map-title">Next 지도</h1>
+      <KakaoMap/>
     </div>
   );
 }
